@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phụ Kiện Điện Tử</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+        header, footer { background-color: #333; color: white; text-align: center; padding: 1em 0; }
+        nav { display: flex; justify-content: center; background-color: #444; }
+        nav a { color: white; padding: 14px 20px; text-decoration: none; }
+        nav a:hover { background-color: #555; }
+        .container { padding: 20px; }
+        .products { display: flex; flex-wrap: wrap; gap: 20px; }
+        .product { border: 1px solid #ccc; padding: 10px; flex: 1 1 calc(33% - 40px); box-sizing: border-box; }
+        .product img { width: 100%; }
+        .product h2 { font-size: 1.5em; }
+        .product p { font-size: 1em; }
+        .contact-form { display: flex; flex-direction: column; max-width: 400px; margin: 0 auto; }
+        .contact-form input, .contact-form textarea { margin: 10px 0; padding: 10px; }
+        .social-links a { margin: 0 10px; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Phụ Kiện Điện Tử</h1>
+    </header>
+
+    <nav>
+        <a href="#home">Trang Chủ</a>
+        <a href="#products">Sản Phẩm</a>
+        <a href="#about">Về Chúng Tôi</a>
+        <a href="#contact">Liên Hệ</a>
+        <a href="#cart">Giỏ Hàng</a>
+    </nav>
+
+    <div id="home" class="container">
+        <h2>Chào Mừng Đến Với Cửa Hàng Phụ Kiện Điện Tử</h2>
+        <p>Tại đây bạn có thể tìm thấy mọi phụ kiện điện tử mà bạn cần.</p>
+    </div>
+
+    <div id="products" class="container">
+        <h2>Sản Phẩm</h2>
+        <div class="products">
+            <div class="product">
+                <img src="product1.jpg" alt="Sản Phẩm 1">
+                <h2>Sản Phẩm 1</h2>
+                <p>Giá: 500,000 VND</p>
+                <button>Thêm vào giỏ hàng</button>
+            </div>
+            <div class="product">
+                <img src="product2.jpg" alt="Sản Phẩm 2">
+                <h2>Sản Phẩm 2</h2>
+                <p>Giá: 300,000 VND</p>
+                <button>Thêm vào giỏ hàng</button>
+            </div>
+            <div class="product">
+                <img src="product3.jpg" alt="Sản Phẩm 3">
+                <h2>Sản Phẩm 3</h2>
+                <p>Giá: 200,000 VND</p>
+                <button>Thêm vào giỏ hàng</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="about" class="container">
+        <h2>Về Chúng Tôi</h2>
+        <p>Chúng tôi cung cấp các sản phẩm phụ kiện điện tử chất lượng cao với giá cả hợp lý.</p>
+    </div>
+
+    <div id="contact" class="container">
+        <h2>Liên Hệ</h2>
+        <form class="contact-form">
+            <input type="text" placeholder="Tên của bạn" required>
+            <input type="email" placeholder="Email của bạn" required>
+            <textarea placeholder="Lời nhắn" rows="5" required></textarea>
+            <button type="submit">Gửi</button>
+        </form>
+    </div>
+
+    <div id="cart" class="container">
+        <h2>Giỏ Hàng</h2>
+        <p>Chưa có sản phẩm nào trong giỏ hàng.</p>
+        <button>Thanh Toán</button>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Phụ Kiện Điện Tử. All rights reserved.</p>
+        <div class="social-links">
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">LinkedIn</a>
+        </div>
+        <div>
+            <input type="email" placeholder="Đăng ký nhận tin tức" required>
+            <button>Đăng Ký</button>
+        </div>
+    </footer>
+</body>
+</html>
